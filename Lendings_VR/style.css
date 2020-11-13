@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    font-family: "Inter";
+    scroll-behavior: smooth;
+}
+
+
+p {
+    cursor: default;
+}
+
+.content{
+    background-color: #0e121e;
+    color: white;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    background: #0e121e;
+}
+
+.banner > img {
+    width: 100%;
+}
+
+.text {
+    text-decoration: none;
+    text-align: center;
+    font-size: x-large;
+    color: #fff;
+    position: absolute;
+    top: calc(30% - 200px / 2);
+    left: calc(25% - 770px / 2);
+    width: 770px;
+    height: 200px;
+}
+
+.text > a{
+    transition: text-shadow 0.5s;
+    font-size: 350px;    
+    -webkit-text-shadow: 10px 10px 30px #1d2145;
+    text-shadow: 10px 10px 30px #1d2145;
+    text-decoration: none;
+    color: #fff;
+}
+.text > a:hover{    
+    -webkit-text-shadow: 0 0 0 #1d2145;
+    text-shadow: 0 0 0 #1d2145;
+    text-decoration: none;
+    color: #fff;
+}
+.rad{
+    border-radius: 15px;
+}
+.Control{
+    background-color: white;
+    color: black;
+    padding: 0 4%;
+    margin:3% 10%; 
+    box-shadow: 0 0 10px #1d2145;
+    border-radius: 25px;
+    padding: 15px;
+}
+.Control > h1{
+    text-align: center; 
+}
+.Control > div{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.Control > div > img{
+    width: 60%;
+    margin: 0 auto;
+}
+.Control > div > div{
+    margin: auto 0;
+    width:  80%;
+    font-size: large;
+}
+.Control > div > div > h1{
+    font-size: 30px;
+}
+
+.Control2{
+    background-color: white;
+    color: black;
+    padding: 0 4%;
+    margin:3% 0 0; 
+    box-shadow: 0 0 10px #1d2145;
+    padding: 15px;
+}
+.Control2 > h1{
+    text-align: center; 
+    margin: 20px;
+}
+.Control2 > div{
+    margin: 0 10%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.Control2 > div > img{
+    width: 100%;
+    margin: 0 auto;
+}
+.Control2 > div > div{
+    margin: auto 0;
+    font-size: large;
+}
+.Control2 > div > div > h1{
+    font-size: 30px;
+}
+
+.Control3{
+    background-color: white;
+    color: black;
+    padding: 0 4%;
+    margin:3% 0 0; 
+    box-shadow: 0 0 10px #1d2145;
+    padding: 15px;
+}
+.Control3 > h1{
+    text-align: center; 
+    margin: 20px;
+}
+.Control3 > div{
+    margin: 0 5% 1%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.Control3 > div > img{
+    width: 100%;
+    margin: 0 auto;
+}
+.Control3 > div > div{
+    margin: auto 55px;
+    font-size: large;
+}
+.Control3 > div > div > h1{
+    font-size: 30px;
+}
+
+.VRType{
+    margin: 0 auto;
+    width: 80%
+}
+.VRType > h1{
+    text-align: center;
+}
+.OneType{
+    padding: 0 20px;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.TypeImgDiv{
+    width: 80%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.TypeImgDiv > img{
+    margin: 0 auto;
+    filter: drop-shadow(0 0 5px #fff);
+}
+.TypeTextDiv{
+    margin: auto auto;
+    font-size: large;
+}
+
+.OneType > div > img{
+    width: 100%;
+}
+
+.VRPlusMinus{
+    padding-top: 1%; 
+    margin: 0 auto;
+    width: 80%
+}
+.VRPlusMinus > h1{
+    text-align: center;
+    margin: 20px;
+}
+.VRPlusMinus > div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: large;
+}
+.VRPlusMinus > div > div > ol{
+    list-style-type: none; 
+    counter-reset: num;
+    margin: 0 0 0 60px;
+    padding: 15px 0 5px 0;
+    font-size: 16px;
+    position: relative; 
+}
+
+.VRPlusMinus > div > div > ol > li{
+    position: relative; 
+    margin: 0 0 0 0;
+    padding: 0 0 10px 0;
+    line-height: 1.4;
+}
+.VRPlusMinus > div > div > ol > li:before{
+    content: counter(num); 
+    counter-increment: num;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -55px;
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    text-align: center;
+    line-height: 28px;
+    font-size: 18px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+footer {
+    font-size: 18px;
+    background-color: #eaeaea;
+    height: max-content;
+    padding: 10px 0;
+    text-align: center; 
+}
+footer > p{
+    margin: 15px auto 15px;
+    width: max-content;
+    text-decoration: none;
+    color: black;
+}
